@@ -29,13 +29,19 @@ P_r2 = mt.pow(I_r2,2) * R_2
 P_r3 = mt.pow(I_r3,2) * R_3
 P_tot = P_r1 + P_r2 + P_r3
 
-print(f"V = {V} V")
-print (f"Ir1 = {I_r1} A")
-print (f"Ir2 = {I_r2} A")
-print (f"Ir3 = {I_r3} A")
-print (f"I_total = {I_tot} A")
+# print(f"V = {V} V")
+# print (f"Ir1 = {I_r1} A")
+# print (f"Ir2 = {I_r2} A")
+# print (f"Ir3 = {I_r3} A")
+# print (f"I_total = {I_tot} A")
 
-print (f"P_r1 = {P_r1} W")
-print (f"P_r2 = {P_r2} W")
-print (f"P_r3 = {P_r3} W")
-print (f"P_tot = {P_tot} W")
+# print (f"P_r1 = {P_r1} W")
+# print (f"P_r2 = {P_r2} W")
+# print (f"P_r3 = {P_r3} W")
+# print (f"P_tot = {P_tot} W")
+
+# exp_02 
+r_eq = equivalent_resistor(equivalent_resistor(0.4*mt.pow(10,3), 
+                             72*mt.pow(10,3)), 0.5*mt.pow(10,3))
+print(f"{r_eq} Ohms")
+
